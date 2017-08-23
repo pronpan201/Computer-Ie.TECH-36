@@ -1,0 +1,256 @@
+/*กำหนดรูปแบบ body ของ index.html*/
+#index{
+    padding: 1em 1em;
+    margin: 0px;
+    width:auto;
+    height: auto;  
+    background: #860038;
+    background-repeat: repeat;
+    color: #fdba31;
+    text-align: center;
+    text-shadow: 3px 2px #002d62;
+    font-size: 200%;
+    
+/*กำหนดรูปแบบของปุ่มกด*/
+}
+.btn{
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    border: 2px solid #fdba31;
+    text-decoration: none;
+    background-color: #002d62;
+}
+/*กำหนดขนาดของรูป มีความเป็น*/
+.imgindex{
+    width: 50% 
+}
+/*กำหนดรูปแบบ body*/
+.main {
+    margin:0;
+    padding: 1em 1em;
+    background-color: #002d62;
+}
+/*กำหนดรูปแบบเมื่อเกินหน้าจอให้ hidden และสีพื้นหลัง*/
+.topnav {
+  overflow: hidden;
+  background-color: #002d62;
+}
+/*กำหนดรูปแบบของตัวหนังสือ*/
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+/*กำหนดให้เมื่อมีการเลื่อนเมาส์ไปวางไว้จะเปลี่ยนสีตัวหนังสือและพื้นหลัง*/
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/*กำหนดให้ .icon ไม่แสดง*/
+.topnav .icon {
+  display: none;
+}
+/*กำหนดรูปแบบของส่วน footer*/
+footer{
+    text-align: center;
+    color: white;
+    border: 3px solid #fdba31;
+    width: 100%;
+    margin-top: 0.2em;
+    border-radius: 10px;
+    background: #860038;
+}
+/*กำหนดรูปแบบของ flex1*/
+#flex1 {
+    color: white;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    flex-wrap: wrap; 
+}
+/*กำหนดรูปแบบของ flex2*/
+.flex2 {
+    display: flex;
+    width: 100%;
+    border: 2px solid #fdba31;
+    margin: 2px;
+}
+/*กำหนดรูปแบบของ flex3*/   
+.flex3 {
+    display: flex;
+    text-align: center;
+    width: 50%; 
+    flex-direction: column;
+    float: left; 
+}
+/*กำหนดรูปแบบของ flex4*/
+.flex4{
+    width: 50%;
+    text-align: left;
+}
+/*กำหนดรูปแบบของตาราง th*/
+th{
+    width: 100px;
+}
+
+img{
+    width: 100%;
+}
+/*กำหนดรูปแบบส่วนของหัวข้อ*/
+.toptable{
+    text-align: center;
+    background: #860038;
+    border: 2px solid #fdba31;
+    margin: 1px; 
+}
+/*กำหนดรูปแบบของรูปให้มีขนาดใหญ่ที่สุดของภาพ*/
+.imgpro{
+    max-width: 100%;
+}
+/*กำหนดรูปแบบของรูปภาพ*/
+.imgsocial
+{
+    width: 100%;
+}
+/*กำหนดรูปแบบของกล่องนอกของ about.html*/
+#flexp1 {
+    margin-top: 0.3em;
+    color: white;
+    display: flex;
+    width: 100%;
+    border: 2px solid #fdba31;
+}
+/*กำหนดรูปแบบของ flexp2*/
+.flexp2 {
+    display: flex;
+    width:20%;
+    border: 2px solid #fdba31;
+    flex-wrap: wrap; 
+}
+/*กำหนดรูปแบบของ flex3*/
+.flexp3 {
+    display: flex;
+    width: 80%;
+    border: 2px solid #fdba31;
+    flex-wrap: wrap;
+}
+/*กำหนดรูปแบบของ flex4*/
+.flexp4 {
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+}
+/*กำหนดรูปแบบของ flex5*/
+.flexp5 {
+    max-width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+/*กำหนดรูปแบบของ flex6*/
+.flexp6 {
+    width: 60%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+/*กำหนดรูปแบบของ flex7*/
+.flexp7 {
+    width: 40%;
+    margin: auto;
+}
+/*กำหนดให้เป็น Responsive เมื่อมีการเปลี่ยนขนาดเกิน 1000px แล้วเปลี่ยนไปตามที่กำหนด*/
+@media screen and (min-width: 1000px) {
+    .main { 
+        width: 1000px;
+        margin: auto;
+    }
+    
+    #index{
+        width: 1000px;
+        margin: auto;
+    }
+}
+/*กำหนดให้เป็น Responsive เมื่อมีการเปลี่ยนขนาดน้อยกว่า 700px แล้วเปลี่ยนไปตามที่กำหนด*/
+@media screen and (max-width: 700px){
+/*กำหนดให้ column เริ่มจากหลังไปหน้า*/
+    #flexp1 {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+/*กำหนให้เป็นแถว*/
+    .flexp2 {
+        width:100%;
+        flex-direction: row;
+    }
+/*กำหนดให้ column เริ่มจากหลังไปหน้า*/
+    .flexp3 {
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    
+    .flexp4 {
+        width: 20%;
+        margin: auto;
+}
+    .flexp5 {
+        max-width: 20%;
+}
+    .flex2 {
+        width: 100%;
+        flex-direction: column;
+    }
+    .flex3 {
+        width: 100%;
+    }
+    .flex4{
+        width: 100%;
+    }
+/*ให้การทำงานสัมพันธ์กับโครงสร้าง*/
+    .topnav.responsive {
+        position: relative;
+    }
+/*ให้การทำงานไม่ทำกันและแสดงเป็น block*/
+    .topnav.responsive .icon {
+        float:inherit;
+        position:relative;
+        display: block; 
+        top: 0;
+    }
+/*ให้การทำงานไม่ทำกันและแสดงเป็น block*/
+    .topnav.responsive a {
+        float:inherit;
+        display: block;
+    }
+/*ทำการซ๊อนเนื้อหาที่เป็นลูกของ topnav*/
+    .topnav a:not(child) {
+        display: none;
+    }
+/*ให้โชว์ icon เป็น block*/
+    .topnav a.icon {
+        float:inherit;
+        display: block;
+    }
+    
+}
+   
+/*กำหนดให้เป็น Responsive เมื่อมีการเปลี่ยนขนาดน้อยกว่า 350px แล้วเปลี่ยนไปตามที่กำหนด*/
+@media screen and (max-width: 350px){
+
+    .flexp2 {
+        display: flex;
+        width:100%;
+    }
+    .flexp4 {
+        width: 60%;
+        margin: auto;
+    }
+    .flexp5 {
+    max-width: 50%;
+    }
+}
