@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'rsuregular';
+    src: url('/font/rsu_regular-webfont.woff2') format('woff2'),
+         url('/font/rsu_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+img{
+    max-width: 100%;
+}
+pic1{
+    width: 50%;
+}
+body {
+    border: 12px;
+    font-family: 'rsuregular';
+    line-height: 1.3em;    
+    margin: 20px auto;
+    padding: 20px ;
+    width: 80%;    
+    background-image: url(/images/t2.png);
+}
+header{
+    color: deepskyblue;
+    font-size: 36px;
+    
+}
+p1{
+    margin: 0px auto;
+    font-size: 32px;
+}
+p2{
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+p3{
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+}
+nav li{
+    float: left;
+    list-style: none;
+    margin-left: 2px;
+    margin-top: 10px;
+    font-family: rsu;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+li{
+    list-style: none;
+}
+.mainMenu a:link, .mainMenu a:visited{
+    color: deepskyblue;    
+    display: block;
+    text-align: center;
+    width: 5em;
+}
+.mainMenu a:hover, .mainMenu a:active {
+    background-color: powderblue;
+}
+.iconMenu{
+    width: 48px;
+    height: 48px;
+}
+.iconMenurayong{
+    height: 48px;
+}
+.iconMenuchan{
+    width: 50px;
+    margin-top: -6px;
+}
+.iconMenuaboutme{
+    width: 50px;
+
+}
+.f1 {
+    width: 90px;
+}
+.f2 {
+    width: 70px;
+}
+#flex-con{
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%; /*Responsive design*/
+    background-color: white;
+}
+.flex-con1{
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%; /*Responsive design*/
+    flex-direction: column;
+    float: left;
+}
+.flex-con2{
+ font-size: 16px;
+    padding-left: 30px;
+    font-size: 16px;
+    padding-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row;
+    float: left;
+   
+   
+   
+}
+.flex-con3{
+    font-size: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.flex-con5{
+    margin-left: 15%;
+    flex-direction: column;
+}
+#picc1{
+   margin-top: 40px; 
+}
+section{
+	margin-top: 50px;
+    font-size: px;
+	
+}
+td{
+	padding-left: 18px;
+	font-size: 20px;
+}
+
+#contact1{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+th{
+    max-width: 100%;
+}
+#footer{
+    text-align: right;
+}
+/*Responsive หน้าจอขนาดเล็กสุด*/
+@media screen and (min-width: 110px) and (max-width: 555px){
+.flex-con1{
+        margin: auto;
+        width: 90%;
+}
+.flex-con2{
+       margin:auto;
+        width:90%;
+}
+}
+/*Responsive MObile S*/
+@media screen and (min-width: 320px) and (max-width: 555px){
+.flex-con1{
+        margin: auto;
+        width: 100%;
+}
+.flex-con2{
+       margin:auto;
+        width:100%;
+}
+}
+
+/*Responsive MObile L*/
+@media screen and (min-width: 425px) and (max-width: 555px){
+ .flex-con1{
+        margin:auto;
+        width:100%
+}
