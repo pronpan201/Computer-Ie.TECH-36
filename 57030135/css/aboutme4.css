@@ -1,0 +1,173 @@
+img{
+    max-width: 100%;  /*กำหนดความกว้างของภาพ*/
+}
+/*กำหนดขนาดของ body เพื่อสร้างระยะห่าง จากขอบเว็บ และใส่background*/
+body{
+    margin-bottom: 10px auto;
+    margin-left: 50px auto;
+    margin-right: 50px auto;
+    margin-top: 10px auto;
+    background-image: url(/img/11.jpg);
+}
+/*กำหนดขนาดและสีตัวอักษรที่วิ่ง*/
+marquee{
+    font-size: 20px;
+    color: red;
+}
+/*กำหนดความกว้างของ link ทั้งหมด*/
+a{
+    max-width: inherit;
+}
+/*กำหนดขนาดของ link และลบจุดของlink*/
+li{
+   max-width: 85%;
+   list-style: none;
+    float: left;
+}
+/*กำหนดสี ขนาด จัดหน้า ของlink*/
+a:link, a:visited{
+    font-family: sans-serif;
+    display: block;
+    color: red;
+    width: 15em;
+    text-align: center;
+     padding: 1.5em;
+}
+/*กำหนดให้เมื่อเลื่อนเม้าส์ผ่าน แล้วจะเปลี่ยนฟ้อนต์เป็นสีดำ และ พื้นหลังเป็นสีเหลือง*/
+a:hover, a:active{
+    color: white;
+     background-image: url(/img/22.png);
+}
+/*ตั้งค่าข้อความ*/
+p{
+    color: black;
+    font-family: sans-serif;
+}
+/*กำหนดและตกแต่งส่วนสุดท้ายของเว็บ*/
+footer{
+    padding-top: 0.1px;
+     background: #f999b4;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px #9b9b9b;
+    min-height: 30px;
+    text-align: center;   
+    width: 100%;
+}
+h4{
+    color: black;
+}
+/*กำหนดขนาด สี รายละเอียดต่างๆของปุ่ม Back to top*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 80px; /* Place the button at the bottom of the page */
+    right: 0px; /* Place the button 0px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: 3px solid pink; /* Create borders */
+    outline: none; /* Remove outline */
+    background-color: #f999b4; /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+
+#myBtn:hover {
+    background-color: #f63169; /* Add a dark-grey background on hover */
+}
+/*กำหนดส่วนของ javascriptและตกแต่ง*/   
+.flex-con0{
+    margin-top: 10px;
+    margin-left: 25%;
+    margin-bottom: 20px;
+    background-image: url(/img/22.png);
+    border-radius: 50px;
+    box-shadow: 5px 5px 2px #9b9b9b;
+    min-height: 10px;
+    text-align: center;   
+    width: 50%;
+}
+
+/*กำหนดขนาดของflex box ที่ครอบคลุม flex box ย่อยอื่นๆ*/
+#flex-con{
+    border-radius: 10px;
+    padding-top: 10px;
+    background-image: url(/img/22.png);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%; /*Responsive design*/
+}
+/*กำหนด flex box ย่อย อันแรก เพื่อใช้สำหรับใส่ภาพ*/
+.flex-con1{
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%; /*Responsive design*/
+    flex-direction: column;
+    float: left;
+}
+/*กำหนด flex box ย่อย อันที่สอง เพื่อใช้สำหรับใส่ข้อความ โดยให้สามารถใส่ flex-con3ได้เหมาะสม*/
+.flex-con2{
+    padding-top: 30px;
+    font-size: 16px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 45%; /*Responsive design*/
+    flex-direction: row;
+    float: left;
+}
+
+/*กำหนด flex-con5 เพื่อจัดหน้าของlink*/
+.flex-con5{
+    margin-left: 10%;
+    flex-direction: row;
+}
+
+/*Responsive หน้าจอขนาดเล็กสุด*/
+@media screen and (min-width: 110px) and (max-width: 555px){
+.flex-con1{
+        margin: auto;
+        width: 90%;
+}
+.flex-con2{
+        padding-left: 10px;
+        margin:auto;
+        width:90%;
+}
+a:link, a:visited{
+    font-family: sans-serif;
+    display: block;
+    color: red;
+    width: 10em;
+    text-align: center;
+     padding: 1.5em;
+}
+#myBtn{
+    bottom : 70px;
+}    
+}
+
+
+/*Responsive MObile L*/
+@media screen and (min-width: 425px) and (max-width: 555px){
+ .flex-con1{
+        padding-left: 10px;
+        margin:auto;
+        width:90%
+}
+.flex-con2{
+        margin:auto;
+        width:90%;
+}
+li{
+   max-width: 100%;
+}
+/*กำหนดสี ขนาด จัดหน้า ของlink*/
+a:link, a:visited{
+    width: 18em;
+}
+}
