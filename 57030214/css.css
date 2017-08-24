@@ -1,0 +1,120 @@
+/*กำหนดส่วนul*/
+ul {
+    list-style-type: none;
+    /*การกำหนดค่าระยะห่างภายนอกกรอบ*/
+    margin: 0;
+    /*กำหนดค่าระยะห่างภายในกรอบ*/
+    padding: 0;
+    overflow: hidden;
+    /*กำหนดสีพื้นหลัง*/
+    background-color: #333333;
+}
+/*กำหนดส่วนli*/
+li {
+    float: left;
+}
+/*กำหนดส่วนli a*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+/*กำหนดส่วนli a */
+li a:hover {
+    background-color: #111111;
+}
+/*กำหนดส่วนh1*/
+h1 {
+    text-align: center;
+    font-size: 250%;
+    font-family: courier;
+}
+/*กำหนดส่วนimg*/
+img {
+    width:350px;height:350px;
+    margin: auto;
+}
+/*กำหนดส่วนfooter*/
+footer {
+    text-align: center;
+    padding: 0.01em;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    color: white;
+}
+/*กำหนดส่วนdiv.container*/
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+/*กำหนดส่วนheader*/
+header {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+/*กำหนดส่วนnav*/
+nav {
+    float: left;
+    max-width: 100px;
+    margin: 0;
+    padding: 1em;
+}
+/*กำหนดส่วนnav ul*/
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+/*กำหนดส่วนnav ul a*/   
+nav ul a {
+    text-decoration: none;
+}
+/*กำหนดส่วนnav article*/
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+/*กำหนดส่วน a*/
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/*กำหนดส่วน.name*/
+.name {
+    text-align: center;
+    font-size: 100%;
+}
+/*กำหนดส่วน table*/
+table {
+	width: 100%;
+	border: 0px;
+}
+/*รูปภาพ*/
+.pic {
+	width: 50%;
+	margin-left: 25%;
+	height: auto;
+}
