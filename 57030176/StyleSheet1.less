@@ -1,0 +1,227 @@
+﻿/* ส่วน body กำหนดขนาดอักษาให้มีขนาดเป็น15px/1.5 padding margin และสี body ซึ่งเป็นพื้นหลังเว็บเพจด้วยสี #f4f4f4 */
+body {
+    font: 15px/1.5 sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+/*.container หมายถึง เลือกแท็กโดยอ้างอิงจากชื่อ classที่ชื่ว่า containerกำหนดให้มีความกว้าง 80% overflow:hidden;เป็นการซ่อนรายละเอียดที่เกินกำหนดความกว้างใช้ซ่อนรายละเอียดของรูปภาพส่วนที่เกิน ซึ่งเป็นส่วนที่เป็นแอตทริบิวต์หลัก */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/*กำหนดmargin padding ตรงแท็บเมนูใน ul ทั้งหมดให้เป็น 0*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+/*Edbackground อยู่ในส้วย aside ให้padding 15px,กำหนดสีพื้นหลังเป็นสี #E9E5E4, margin-topกำหนดระยะห่างระหว่างข้อความกับข้อความในย่อหน้าถัดไปเป็น 10px,margin-boyttom กำหนดระยะห่างระหว่างข้อความกับข้อความในย่อหน้าที่แล้ว 10px*/
+.EdBackground {
+    padding: 15px;
+    background: #E9E5E4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+/*ส่วน header กำหนดให้ header มีสีเทาเข็ม ตัวหนังสือเป็นสีขาว กำหนดpaddingระยะห่างระหว่างขอบด้านในเส้นบนกับข้อความที่อยู่ในกรอบ */
+header {
+    background: #5D535E;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #E9E5E4 3px solid;
+}
+
+/*อ้างถึงแท็ก a ที่อยู่ใน headerให้ข้อความเป็นสีขาว, text-decoration:none เพิ่มลูกเล่นไม่ให้ทำอะไรกับข้อความและเปลี่ยนข้อความให้ตัวใหญ่ขึ้นเล็กน้อย,ตัวอักษรมีขนาด 16px */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/*อ้างถึงแท็ก<li>ที่อยู่ในheader ที่เป็นตรงเมนู เพิ่มลูกเล่น.highlight hoverดักจับ ให้มีการเปลี่ยนสีอักษรเมือเม้าส์เลื่อนมาบนElements */
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #D1C926;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+
+/* ส่วน Showcase*/
+/* เปลี่ยนภาพพื้นหลังด้วย css กำหนดให้รูปในตำแหน่ง10% 15% ให้ข้อความอยู่ตรงกลาง */
+#showcase {
+    min-height: 400px;
+    background: url('../img/me.png');
+    background-position: 10% 15%;
+    text-align: center;
+}
+/*กรอก #ตามด้วยชื่อ id เช่น #showcase เพื่อกำหนดการแก้ไขแท็กที่มี id เป็น#showcase เท่านั้น*/
+#showcase h1 {
+    margin-top: 300px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+/*กำหนดขนาดตัวอักษรให้มีขนาดเป็น 20px*/
+#showcase p {
+    font-size: 20px;
+}
+
+
+/* bottomfram */
+/* ส่วน bottomfram กำหนดสีพื้นหลังเป็นสี#5D535E; และสั่งให้ข้อความใน<h1>ลอยไปชิดทางซ้าย ตัวอักรเป็นสีขาว*/
+#bottomfram {
+    padding: 15px;
+    color: #ffffff;
+    background: #5D535E;
+}
+
+#bottomfram h1 {
+    float: left;
+}
+
+
+
+
+/* Boxes */
+/*ส่วน section boxes สั่งให้กำหนดระยะห่าง margin-top:20px*/
+#boxes {
+    margin-top: 20px;
+}
+/*ให้อิลิเมนต์boxลอยชิดไปทางซ้าย สั่งให้กำแหน่งของข้อความอยู่กึ่งกลาง มีความกว้างเป็น30% กำหนดระยะห่างระหว่างขอบของbox เป็น10px ให้รูปภาพกว้างขนาด100px */
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 100px;
+}
+
+
+
+/* Sidebar */
+/* ส่วน aside อ้างถึงแท็กที่มี id เป็น sidebarให้ชิดขวา กว้าง45%ห่างจากเอลิเมนต์ด้านบน10px*/
+aside#sidebar {
+    float: right;
+    width: 45%;
+    margin-top: 10px;
+}
+
+aside#sidebar aside#sidebar {
+    width: 90%;
+    padding: 5px;
+}
+
+
+
+
+/* Main-col */
+/*ส่วน artical อ้างถึงแท็กที่มีid ชื่อmain-col ให้ชิดซ้าย กว้าง52%*/
+article#main-col {
+    float: left;
+    width: 52%;
+}
+/*ส่วน artical อ้างถึงแท็กที่มีid ชื่อmain-col2 ให้อยู่ตำแหน่งตรงกลาง กว้าง100%*/
+article#main-col2 {
+    float: center;
+    width: 100%;
+}
+
+/*เลือก listที่อยู่ใน ulกำหนดไม่ให้มีเครื่องหมายจุดด้านหน้า ใส่padding ให้ห่างจากขอบ20px กำหนดระยะห่างระหว่างข้อความ กับข้อความในย่อหน้าถัดไป 5px พื้นหลังสีขาว*/
+ul#review li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #FFFFFF;
+}
+
+
+
+/*ส่วนของ footer กำหนดpaddingให้ห่างจากขอบ 20pxกำหนดระยะห่างระหว่างข้อความ กับข้อความในย่อหน้าที่แล้ว อักษรสีขาว พื้นหลังสีชมพู#E83555; กำหนดข้อความให้อยู่อยู่กึ่งกลาง  */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #E83555;
+    text-align: center;
+}
+
+/* Media Queries */
+/*ปรับแต่งหน้าเว็บเพจให้เหมาะกับขนาดหน้าจอด้วย Media queries ให้สามารถปรับแต่งเว็บเพจให้เหมาะสมกับขนาดของหน้าจอ(max-width: 768px)หมายถึงเป้นการแสดงผลบนหน้าจอที่มีขนาดความกว้างไม่เกิน 768px ให้ใช้สไตล์ตามที่กำหนดไว้ ถ้าผิดค่าไปจากนี้ก็ไม่ใช้สไตล์ที่กำหนด*/
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #boxes .box,
+    article#main-col,
+    article#main-col2,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+
+
+    /*ปรับแต่งหน้าเว็บเพจให้เหมาะกับขนาดหน้าจอด้วย Media queries ให้สามารถปรับแต่งเว็บเพจให้เหมาะสมกับขนาดของหน้าจอ*/
+    @media screen and (max-width: 768px) and (min-width: 400px) .flexItem {
+        width: 100%;
+    }
+    /*ส่วนของ id flexItem หากหน้าจอมีขนาด 768 กำหนดรูปมีความกว้าง29% ใส่เงาให้กรอบเงาในแนวนอน 5px เงาแนวตั้ง5px เบลอ2px สีเทาอ่อน*/
+    .flexItem img {
+        width: 29%;
+        box-shadow: 5px 5px 2px #9b9b9b;
+        margin: 10px 10px;
+    }
+
+    /*ส่วนของตารางในหน้าaboutจัด้ข้อความให้อยู่ตรงกลาง */
+    tr {
+        text-align: center;
+    }
+    /*th ส่วนหัวเรื่องกับแถวแรกของตาราง td ข้อมูลในแต่ละแถว, กำหนด padding 5px ให้ข้อความอยู่ตรงกึ่งกลาง*/
+    th, td {
+        padding: 5px;
+        text-align: center;
+    }
+}
