@@ -1,0 +1,139 @@
+/* ทำการกำหนดคุณลักษณะต่างๆ ในหน้าที่สี่ คือหน้า about us ดังต่อไปนี้ */
+*{margin: 0;
+    padding: 0;}
+/*กำหนดขอบทั้งหมด (ภายใน *) ให้เป็น 0 */
+
+#container1 { width: 100%;}
+/*กำหนดให้ contrainer1 ที่คลุมทุก Element อยู่ มีขนาด 100% */
+
+#Container{ text-align: center;
+    width: 80%;
+    margin: auto ;
+    background-color: papayawhip;
+    
+}
+/*กำหนดให้ contrainerที่คลุมทุก Element รองจาก #container1 โดยมีขนาด 80% , กำหนดพื้นหลังให้เป็นสีออกส้มพีช และกำหนดส่วนอื่นๆ ตามความเหมาะสม */
+
+#header { color: dimgrey;
+    text-align: center;
+    background-color: papayawhip;
+    margin: auto;
+    
+}
+/* เป็นการกำหนดลักษณะต่างๆ ภายใน haeder เช่น พื้นหลัง การวางตำแหน่ง เป็นต้น */
+
+.nav {  text-align: center;
+        background-color:cornsilk;
+        padding-top: 0px;
+        padding-bottom: 3px;
+        width: 100%;
+        margin-bottom: 0px;
+       
+        }
+
+.nav a { text-align: center;
+  display: block;
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover { border-radius: 10px;
+  background-color: #ddd;
+  color: black;
+    text-align: center;
+    
+}
+
+.nav .icon {
+  display:none;
+}
+
+/* เรากำหนด tab เมนูให้มีขนาด สี และการแสดงผลตามทีต้องการ ในที่นี้ ให้ Bgของเมนูเป็นสีเทาเข้ม ตัวอักษรเป็นสีขาว และส่วนของ a เป็นสีเทาอ่อน คือเมื่อมีเม้าส์มาแตะที่ส่วนของ a ในแต่ละครั้งจะขึ้นเป็นสีเทาอ่อน เป็นส่วนๆไปและจะมีขอบมนตามที่เราได้กำหนด ขอบraduisไว้ โดยในที่นี้เรากำหนดให้แสดงผลตามแนวตั้ง ไม่ได้กำหนดให้เห็นเป็นรูปแบบแฮมเบอร์เกอร์ เพราะส่วนตัวคิดว่าสำหรับผู้ใหญ่จะใช้ไม่ค่อยเป็น จึงทำให้เป็นแนวตั้งเห็นทุกเมนูชัดๆเลยจะดีกว่า */
+
+#section {  display: block ;
+            float: left;
+            width: 35%;
+            margin-left: 0;
+            margin-top: 2%;
+            background-color: papayawhip;
+            text-align: center;
+}
+/* ในส่วนของ section นี้ กำหนดให้มีการแสดงเป็นบล็อค และเรากำหนดให้ชิดอยู่ทางด้านซ้าย มีขนาดคือ 35%  มีขอบบน 2% และอยู่ในตำแหน่งกึ่งกลาง และมีการกำหนดรูปแบบอื่นๆตามความเหมาะสม*/
+
+#article p {text-align: left;
+            font-size: 120%;
+            margin-bottom: 10%;
+            margin-left: 10%;}
+#article p Br { margin : auto;}
+
+#article h1 { font-size: 170%;
+              color: brown;}
+#article h4 { font-size: 160%;
+              color:firebrick;
+             margin-bottom: 5%;}
+
+/* ภายใน section เราได้กำหนด ไอดี article ไว้ด้วย ดังนั้นหากเราต้องการจะปรับขนาด หรือกำหนดลักษณะใดๆ ก็สามารถใช้การแก้ไขผ่านไอดี article นี้ได้ดังโค้ดด้านบน */
+
+#pic1 { border-radius: 40px;}
+/* เรากำหนดเนื้อหารูปภาพที่อยู่ใน ไอดี pic1 ให้มีขอบมน หรือมีขนาด radius 40pxนั่นเอง*/
+
+#aside {    display: block;
+            float: right;
+            width: 65%;
+            text-align: center;
+            margin-top: 2%;
+            background-color: papayawhip;
+}
+/* ในส่วนของ aside นี้ กำหนดให้มีการแสดงเป็นบล็อค และเรากำหนดให้ชิดอยู่ทางด้านขวา  มีขนาดคือ 65%  มีขอบบน 2% และอยู่ในตำแหน่งกึ่งกลาง และมีการกำหนดรูปแบบอื่นๆตามความเหมาะสม*/
+
+#adiv3 p {margin-top: 4%;
+         font-size: 100%;
+         text-decoration: none;}
+/* กำหนดลักษณะต่างๆ ของตัวอักษรที่อยู่ในไอดี adiv3 ให้มีลักษณธตามที่กำหนด เช่น ไม่ให้การขีดเส้นใต้แสดงผล */
+
+#adiv3 img { margin-top: 6%;
+            text-align: left;
+            border-radius: 5px;}
+/* กำหนดลักษณะต่างๆ ของรูปภาพที่อยู่ในไอดี adiv3 ให้มีลักษณธตามที่กำหนด เช่น อยู่ในตำแหน่งด้านซ้าย และมีขอบบน 6% */
+
+#adiv1 { color: darkblue;}
+/* กำหนดเนื้อหาภายใน ไอดี adiv1 ให้มีสีน้ำเงินเข้ม*/
+
+#content { text-align: center;
+            color: darkblue;}
+/* กำหนดหัวข้อที่อยู่ภายในไอดี content ให้มีตำแหน่งอยู่ที่กึ่งกลาง และมีสีน้ำเงินเข้ม */
+
+#pic1 img { text-align: center;
+            margin: auto auto;
+            border-radius: 80px}
+/* กำหนดรูปภาพที่อยู่ภายในไอดี pic1 ให้มีตำแหน่งอยู่ที่กึ่งกลาง และมีขอบมน 80px*/
+
+
+@media screen and (max-width: 720px){
+  #container,#section,#aside,#footer,h2,h3{width: 95% ; margin: 0px;},
+    .topnav a:not(child) {display: none;}
+    .topnav a.icon {
+    float:inherit;
+    display: block;
+  },
+    #adiv3 img { width: 50%;}
+    
+}
+
+/* เป็นการกำหนดให้้เว็บมีความเป็น Responsive คือสามารถเปิดดูได้ในทุกๆอุปกรณ์ โดยในแต่ละส่วนมีขนาดตามที่เรากำหนด ให้เหมาะสมกับอุปกรณ์นั้นๆ*/
+@media screen and (max-width: 720px){
+ #container,#section,#aside,#footer,h2,h3{width: 95% ; margin: 0px;}
+    /*ส่วนนี้ทำการกำหนดว่า ถ้าขนาดของอุปกรณ์มีขนาดหน้าจอไม่ต่ำกว่า 720px และไม่น้อยกว่า 480px ก็จะให้แสดงผลตามโค้ดที่กำหนด ว่าจะให้แสดงผลอะไรบ้าง มีขนาดเท่าไหร่บ้าง ตามความเหมาพสมของหน้าจอ*/
+
+@media screen and (max-width: 480px){
+    #Container{ text-align: center;
+    width: 100%;
+    margin: auto auto;
+    background-color: papayawhip;}
+    ,#section,#aside ,#footer,h2,h3 {width: 100% ; margin: 0px; }
+    #aside img {width:85%;}}
+/*ส่วนนี้ทำการกำหนดว่า ถ้าขนาดของอุปกรณ์มีหน้าจอต่ำกว่า 480px ก็จะให้แสดงผลตามโค้ดที่กำหนด โดยอาจมีการเปลี่ยนแปลงบางส่วนเพื่อให้เข้ากับขนาดหน้าจอที่มีขนาดเล็กลง*/
+  
+  
