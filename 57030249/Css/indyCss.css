@@ -1,0 +1,42 @@
+/* ทำการกำหนดคุณลักษณะต่างๆ ในหน้าแรก คือหน้า index ดังต่อไปนี้ */
+#container { text-align: center;
+            width: 80%;
+            background-color: white;
+            height: auto;
+            background-repeat: repeat;
+            margin-left: 12%;
+            }
+/*กำหนดให้ contrainerที่คลุมทุก Element อยู่ มีขนาด 80%  และกำหนดส่วนอื่นๆ ตามความเหมาะสม */
+
+
+.Button {text-align: center;
+        color: blueviolet;
+        border-radius: 8px;
+        background-color: powderblue;
+        padding: 8px;
+        background-repeat: repeat;
+        font-size: 1.5em;
+        margin: 0;
+        text-decoration: none;
+        }
+
+/* เป็นส่วนของการกำหนด element ที่ใช้ในการทำให้ภาพ สไลด์ทุกๆ 3 วินาที ในที่นี้มี 3 ภาพ และกำหนดให้ขอบด้านซ้ายมีขนาด 2.3%*/
+.SlidePic{  display:none;
+    margin-left: 2.3%;}
+
+/* เป็นการกำหนดให้้เว็บมีความเป็น Responsive คือสามารถเปิดดูได้ในทุกๆอุปกรณ์ โดยในแต่ละส่วนมีขนาดตามที่เรากำหนด ให้เหมาะสมกับอุปกรณ์นั้นๆ*/
+@media screen and (max-width: 720px){
+    #header,.Button,{width: 95% ; margin: 5px;}}
+/*ส่วนนี้ทำการกำหนดว่า ถ้าขนาดของอุปกรณ์มีขนาดหน้าจอไม่ต่ำกว่า 720px และไม่น้อยกว่า 480px ก็จะให้แสดงผลตามโค้ดที่กำหนด ว่าจะให้แสดงผลอะไรบ้าง มีขนาดเท่าไหร่บ้าง ตามความเหมาพสมของหน้าจอ*/
+
+@media screen and (max-width: 480px){
+    #container { text-align: center;
+            width: 98%;
+            background-color: white;
+            height: auto;
+            background-repeat: repeat;
+            margin-left: 1.5%;
+            },#header,.Button, {width:100%; margin: 0px;}}
+/*ส่วนนี้ทำการกำหนดว่า ถ้าขนาดของอุปกรณ์มีหน้าจอต่ำกว่า 480px ก็จะให้แสดงผลตามโค้ดที่กำหนด โดยอาจมีการเปลี่ยนแปลงบางส่วนเพื่อให้เข้ากับขนาดหน้าจอที่มีขนาดเล็กลง*/
+  
+    

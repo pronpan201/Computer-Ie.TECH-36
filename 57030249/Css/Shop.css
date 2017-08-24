@@ -1,0 +1,190 @@
+/* ทำการกำหนดคุณลักษณะต่างๆ ในหน้าที่สอง  คือหน้า Life style ดังต่อไปนี้ */
+*{margin: 0;
+    padding: 0;}
+/*กำหนดขอบทั้งหมด (ภายใน *) ให้เป็น 0 */
+
+#Container{ text-align: center;
+    width: 104% ;
+    background-color:  #e7edf3 ;
+    
+}
+/*กำหนดให้ contrainerที่คลุมทุก Element อยู่ มีขนาด 100% , กำหนดพื้นหลังให้เป็นสีออกฟ้าๆโดยประมาณ และกำหนดส่วนอื่นๆ ตามความเหมาะสม */
+
+#header { color: dimgrey;
+    text-align: center;
+    background-color: gainsboro;
+    margin: 0;
+    
+}
+/* เป็นการกำหนดลักษณะต่างๆ ภายใน haeder เช่น พื้นหลังกำหนดให้เป็นสีเทา การวางตำแหน่งให้อยู่ตรงกลาง และมีระยะขอบเท่ากับ0 เป็นต้น */
+
+.nav {  text-align: center;
+        background-color:#b8b8b8;
+        padding-top: 2px;
+        padding-bottom: 3px;
+        width: 100%;
+        margin-bottom: 0px;
+       
+        }
+
+.nav a { text-align: center;
+  display: block;
+  color: white;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover { border-radius: 10px;
+  background-color: #ddd;
+  color: black;
+    text-align: center;
+    
+}
+
+.nav .icon {
+  display:none;
+}
+/* เรากำหนด tab เมนูให้มีขนาด สี และการแสดงผลตามทีต้องการ ในที่นี้ ให้ Bgของเมนูเป็นสีเทาเข้ม ตัวอักษรเป็นสีขาว และส่วนของ a เป็นสีเทาอ่อน คือเมื่อมีเม้าส์มาแตะที่ส่วนของ a ในแต่ละครั้งจะขึ้นเป็นสีเทาอ่อน เป็นส่วนๆไปและจะมีขอบมนตามที่เราได้กำหนด ขอบraduisไว้ โดยในที่นี้เรากำหนดให้แสดงผลตามแนวตั้ง ไม่ได้กำหนดให้เห็นเป็นรูปแบบแฮมเบอร์เกอร์ เพราะส่วนตัวคิดว่าสำหรับผู้ใหญ่จะใช้ไม่ค่อยเป็น จึงทำให้เป็นแนวตั้งเห็นทุกเมนูชัดๆเลยจะดีกว่า */
+
+section{
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ /* กำหนดขอบต่างๆ ในส่วนที่เป็น section */
+
+#section {  background-color: #e7edf3;
+            display: block ;
+            float: left;
+            width: 46%;
+            margin-left:4%;
+}
+/* ในส่วนที่มี ไอดี section จะกำหนดให้มีพื้นหลังสีเทาอ่อน มีกาารแสดงในลักษณธบล็อค และจะแสดงผลชิดซ้าย ในที่นี้มีขนาด 46% และมีขอบซ้าย 5px */
+
+#aside {    display: block;
+            float: right;
+            width: 45%;
+            text-align: center;
+            background-color: #e7edf3;
+            margin-top: 3%;
+         
+
+}
+/* ส่วนของ aside นี้ กำหนดให้มีการแสดงเป็นบล็อค และเรากำหนดให้ชิดอยู่ทางด้านขวา มีขนาด 48.5% โดยประมาณ เหตุผลที่เมื่อรวม section 46% + aside 48.5% แล้วไม่เต็ม 100% เพราะ เราต้องเผื่อเนื้อที่ไว้สำหรับ margin และ padding ด้วยนั่นเอง */
+
+footer {clear: both;
+        background-color: gray;
+        width: 100%;}
+/*ส่วนของ footer ทำการเคลียร์ทุกอย่าง และกำหนดให้มีขนาด 100%*/ 
+
+
+
+#content { text-align: center;
+            color: darkblue;
+            margin: 2% 2% 2% 2% ;
+            width: 85%;
+            text-decoration-line: underline}
+
+/* ในส่วนหัวข้อเรื่อง เรากำหนดให้มีสีเป็นสีน้ำเงินเข้ม และอยู่ในตำแหน่งกึ่งกลาง และมีระยะขอบเล็กน้อย */
+
+#pic1 img { text-align: center;
+            margin: auto auto;}
+
+
+table{margin-left: 10%;
+    margin-bottom:  5%;
+    margin-right:  15%;
+    border-spacing: 0;
+    width: 100%;
+}
+/* กำหนดระยะขอบ และขนาดของตารางในส่วนต่างๆ */
+
+caption{
+    margin-bottom: 2%;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+}
+#adiv1 {margin-left: 5%;
+        margin-bottom: 10%;}
+th,td{
+    text-align: left;    
+    width: %;
+}
+  /* กำหนดการวางตำแหน่ง ระยะขอบ และขนาดของตารางในส่วนต่างๆ */
+
+}
+
+/* ต่อไปนี้เป็นการกำหนดเนื้อหาภายในส่วนย่อยๆ ที่จะประกอบด้วยรูปภาพและตาราง เป็นการกำหนดรูปแบบและขนาดทั่วๆไป เช่นสีพื้นหลัง ขนาดระยะขอบ เป็นต้น */
+#v3121 a{
+    display: block;
+    color: #FAA202;
+    background-color: #264581;
+    width: 8em;
+    text-align: center;
+    padding: 0.5em;
+    
+    width: 100%;
+}
+
+#V3121 {
+     width: 90%;
+    padding: 0.5em;
+    border-radius: 1.5%;
+    background-color: #e7edf3;
+}
+
+#Clubmaster{
+     width: 90%;
+    padding: 0.5em;
+    border-radius: 1.5%;
+}
+
+#RecBlack {
+     width: 90%;
+    padding: 0.5em;
+    border-radius: 1.5%;
+}
+
+
+/* กำหนดรายละเอียดต่างๆปุ่มกด ดังต่อไปนี้ */
+.Button {text-align: center;
+        color: blueviolet;
+        border-radius: 8px;
+        background-color: powderblue;
+        padding: 8px;
+        background-repeat: repeat;
+        font-size: 1.5em;
+        margin: 0;
+        text-decoration: none;
+        }
+
+.Button1 {text-align: center;
+        color: blueviolet;
+        border-radius: 8px;
+        background-color: lightsteelblue;
+        padding: 8px;
+        background-repeat: repeat;
+        font-size: 1.5em;
+        margin: 0;
+        text-decoration: none;
+        }
+
+/* เป็นการกำหนดให้้เว็บมีความเป็น Responsive คือสามารถเปิดดูได้ในทุกๆอุปกรณ์ โดยในแต่ละส่วนมีขนาดตามที่เรากำหนด ให้เหมาะสมกับอุปกรณ์นั้นๆ*/
+@media screen and (max-width: 720px){
+    #container,#section,#aside,#footer,h2,h3{width: 95% ; margin: 0px;}
+    .topnav a:not(child) {display: none;}
+    .topnav a.icon {
+    float:inherit;
+    display: block;
+  }
+}
+
+/*ส่วนนี้ทำการกำหนดว่า ถ้าขนาดของอุปกรณ์มีขนาดหน้าจอไม่ต่ำกว่า 720px และไม่น้อยกว่า 480px ก็จะให้แสดงผลตามโค้ดที่กำหนด ว่าจะให้แสดงผลอะไรบ้าง มีขนาดเท่าไหร่บ้าง ตามความเหมาพสมของหน้าจอ*/
+
+@media screen and (max-width: 480px){
+    #container,#section,#aside ,#footer,h2,h3 {width: 95% ; margin: 0px; }}
+  
+/*ส่วนนี้ทำการกำหนดว่า ถ้าขนาดของอุปกรณ์มีหน้าจอต่ำกว่า 480px ก็จะให้แสดงผลตามโค้ดที่กำหนด โดยอาจมีการเปลี่ยนแปลงบางส่วนเพื่อให้เข้ากับขนาดหน้าจอที่มีขนาดเล็กลง*/
